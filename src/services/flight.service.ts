@@ -27,11 +27,21 @@ export class FlightService {
         })
     }
 
+    static async getFlightList() {
+        return client.request({
+            url: '/flight/list',
+            method: 'GET',
+            params: {
+                'type': 'departure'
+            }
+        })
+    }
+
     static async getFlightById(id: number) {
         return client.get(`/flight/${id}`)
     }
 
-    static async getDestinations(){
+    static async getDestinations() {
         return client.get('/flight/destination')
     }
 }
