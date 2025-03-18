@@ -9,14 +9,14 @@
         </mat-form-field>
         <mat-form-field class="full-width">
             <mat-label>Password</mat-label>
-            <input type="password" matInput placeholder="Input your password..." [(ngModel)]="password">
+            <input id="password" type="password" matInput placeholder="Input your password..." [(ngModel)]="password">
         </mat-form-field>
     </mat-card-content>
     <mat-card-actions>
         <button type="button" mat-button (click)="doLogin()">
             <i class="fa-solid fa-right-to-bracket"></i> Login now
         </button>
-        <a routerLink="/signup" mat-button>
+        <a mat-button routerLink="/signup">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> Create an account
         </a>
     </mat-card-actions>

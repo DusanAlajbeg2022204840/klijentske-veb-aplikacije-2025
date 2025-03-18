@@ -5,6 +5,11 @@ body {
     color: white;
 }
 
+.bg-dark {
+    background-color: #1e2124;
+    color: white;
+}
+
 a {
     color: gray;
 }
@@ -18,10 +23,11 @@ body {
     margin-top: 30px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-.example-card {
+.flight-card {
     max-width: 400px;
 }
 
@@ -52,4 +58,28 @@ body {
 
 .cyan {
     color: #00dddd
+}
+
+.link-name {
+    padding-left: 3px;
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .hide-780 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hide-600 {
+        display: none;
+    }
 }

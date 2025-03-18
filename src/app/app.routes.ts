@@ -18,8 +18,8 @@ export const routes: Routes = [
     { path: 'details/:id', component: DetailsComponent },
     { path: 'login', component: LoginComponent },
     { path: 'user', component: UserComponent },
-    { path: 'signup', component: SignupComponent},
+    { path: 'signup', component: SignupComponent },
 
-    
+
     { path: '**', redirectTo: '' }
 ]

@@ -16,7 +16,7 @@
 
         <mat-form-field class="full-width">
             <mat-label>Last Name</mat-label>
-            <input type="text" matInput placeholder="Input your surname..." [(ngModel)]="firstName">
+            <input type="text" matInput placeholder="Input your surname..." [(ngModel)]="lastName">
         </mat-form-field>
 
         <mat-form-field class="full-width">
@@ -40,16 +40,18 @@
         </mat-form-field>
 
         <mat-form-field class="full-width">
-            <mat-label>Select Destination</mat-label>
-            <mat-select [disabled]="!destinationList" [(ngModel)]="destination">
-                <mat-option *ngFor="let dest of destinationList" [value]="dest">{{dest}}</mat-option>
+            <mat-label>Select Favourite Destination</mat-label>
+            <mat-select [(ngModel)]="destination">
+                <mat-option *ngFor="let dest of destinationList" [value]="dest">
+                    {{dest}}
+                </mat-option>
             </mat-select>
         </mat-form-field>
-        
+
     </mat-card-content>
     <mat-card-actions>
         <button type="button" mat-button (click)="doSignup()">
-            <i class="fa-solid fa-right-to-bracket"></i> Sign up now
+            <i class="fa-solid fa-right-to-bracket"></i> Signup now
         </button>
         <a mat-button routerLink="/login">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> I already have an account
